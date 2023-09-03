@@ -88,3 +88,33 @@ a{
     width: 50px;
     height: 50px;
 }
+/* media */
+@media screen and (max-width:1000px) {
+    .logo-nav{
+        min-width: 36px;
+    }
+    .left-nav{
+        font-size: 0.9rem;
+    }
+    .link-item{
+        font-size: 0.8rem;
+    }
+    .active{
+        padding: 6px;
+    }
+    .group-icon svg{
+        width: 13px;
+    }
+    .status-box{
+        width: 57px;
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+    .img-profile{
+        width: 40px;
+        height: 40px;
+    }
+    .section-nav{
+        grid-template-columns: 3% 42% 24%;
+    }
+}
