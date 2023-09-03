@@ -99,6 +99,20 @@ a{
 #toggle-nav:checked + label + ul {
     transform: translateX(0);
 }
+#toggle-nav:checked + label span:first-child{
+    transform: rotate(127deg);
+    position: relative;
+    top: -4px;
+}
+#toggle-nav:checked + label span.line-mid{
+    transform: translateX(10px);
+    opacity: 0;
+}
+#toggle-nav:checked + label span:last-child{
+    position: relative;
+    top: -15px;
+    transform: rotate(58deg);
+}
 /* media */
 @media screen and (max-width:1000px) {
     .logo-nav{
@@ -129,6 +143,11 @@ a{
         grid-template-columns: 3% 42% 24%;
     }
 }
+@media screen and (min-width:768px){
+    .mobile-nav{
+        display: none;
+    }
+}
 @media screen and  (max-width:768px) {
     .center-nav{
         display: none;
@@ -149,5 +168,35 @@ a{
         overflow-x: hidden;
         transform: translateX(-350px);
         transition: all 250ms ease-out;
+    }
+    .line{
+        border: 2px solid;
+        width: 14px;
+        display: block;
+        margin-bottom: 3px;
+        transition: all 260ms ease-out;
+    }
+    .section-nav{
+        grid-template-columns: 3% 89% 3%;
+    }
+    .label-nav{
+        position: relative;
+        /*top: 10px;*/
+    }
+    .img-profile{
+        min-width: 27px;
+    }
+    .left-nav{
+        font-size: 0.5rem;
+    }
+    .group-icon svg{
+        width: 10px;
+    }
+    .group-icon{
+        gap: 1.4rem;
+        font-size: 0.5rem;
+    }
+    .section-nav{
+        padding: 1rem;
     }
 }
