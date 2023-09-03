@@ -23,4 +23,14 @@ body{
     border-radius: 12px;
     box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
     padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+/* left */
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+.logo-nav{
+    min-width: 50px;
 }
